@@ -32,7 +32,7 @@
           "Action": "EditData",
           "Target": "Data/TriggerActions",
           "Entries": {
-              "{{ModId}}_MeetTheKids_DayStart": {
+              "{{ModId}}_QuestWizardDayStart": {
                   "Id": "{{ModId}}_MysteriousNoteWizard_DayStart",
                   "Trigger": "DayStarted",
                   "Actions": [
