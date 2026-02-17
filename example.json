@@ -1,0 +1,45 @@
+{
+  "Format": "2.9.0",
+  "Changes": [
+      {
+          "LogName": "PM Custom Quest",
+          "Action": "EditData",
+          "Target": "Strings/StringsFromCSFiles",
+          "Entries": {
+              "{{ModId}}_MysteriousNoteWizard": "here is the requirement blue text stuff {0}/{1}"
+          }
+      },
+      {
+          "LogName": "PM Custom Quest",
+          "Action": "EditData",
+          "Target": "boxosoup.CustomSocialQuest/CohortQuest",
+          "Entries": {
+              "{{ModId}}_MysteriousNoteWizard": {
+                  "Id": "{{ModId}}_MysteriousNoteWizard",
+                  "Title": "The Mysterious Letter",
+                  "Description": "You found a mysterious letter after running into a stranger at the bus stop. Perhaps the Wizard can help decipher it?",
+                  "ObjectiveInstructions": "{{ModId}}_MysteriousNoteWizard",
+                  "MoneyReward": 100,
+                  "CanBeCancelled": false,
+                  // custom fields
+                  "Characters": [
+                      "Wizard"
+                  ]
+              }
+          }
+      },
+      {
+          "Action": "EditData",
+          "Target": "Data/TriggerActions",
+          "Entries": {
+              "{{ModId}}_MeetTheKids_DayStart": {
+                  "Id": "{{ModId}}_MysteriousNoteWizard_DayStart",
+                  "Trigger": "DayStarted",
+                  "Actions": [
+                      "boxosoup.CustomIntroductions_AddCohortQuest {{ModId}}_MysteriousNoteWizard"
+                  ]
+              }
+          }
+      }
+  ]
+}
