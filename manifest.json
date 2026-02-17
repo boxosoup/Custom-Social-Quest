@@ -1,0 +1,13 @@
+{
+  "Name": "Custom Social Quest",
+  "Author": "boxosoup",
+  "Version": "1.0.0",
+  "MinimumApiVersion": "4.0.0",
+  "MinimumGameVersion": "1.6.0",
+  "Description": "Custom introductions quest for CP based NPC mods, special thanks to mushymato.",
+  "UniqueID": "boxosoup.CustomIntroductions",
+  "UpdateKeys": [
+    "Nexus:???"
+  ],
+  "EntryDll": "CustomSocialQuest.dll"
+}
