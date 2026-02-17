@@ -2,7 +2,6 @@
   "Format": "2.9.0",
   "Changes": [
       {
-          "LogName": "PM Custom Quest",
           "Action": "EditData",
           "Target": "Strings/StringsFromCSFiles",
           "Entries": {
@@ -10,7 +9,6 @@
           }
       },
       {
-          "LogName": "PM Custom Quest",
           "Action": "EditData",
           "Target": "boxosoup.CustomSocialQuest/CohortQuest",
           "Entries": {
